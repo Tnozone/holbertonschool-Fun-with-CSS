@@ -1,0 +1,30 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li {
+    border: 2px solid #808080;
+    border-radius: 10%;
+    text-align: center;
+    height: 375px;
+    width: 286px;
+}
+
+.icon {
+    background: url(0-sprite.png);
+}
+
+.i-html {
+    background-position: 0 0;
+}
+
+.i-css {
+    background-position: -33% 0;
+}
+
+.i-js {
+    background-position: -66% 0;
+}
