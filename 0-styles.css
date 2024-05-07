@@ -3,28 +3,43 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
+    height: 45rem;
 }
 
 li {
     border: 2px solid #808080;
-    border-radius: 10%;
+    border-radius: 10px;
     text-align: center;
-    height: 375px;
-    width: 286px;
-}
-
-.icon {
-    background: url(0-sprite.png);
+    font-weight: bold;
+    font-size: 3rem;
+    width: 18rem;
+    height: 75%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .i-html {
-    background-position: 0 0;
+    background: url("./0-sprite.png");
+    width: 17.7rem;
+    height: 22rem;
+    display: block;
 }
 
 .i-css {
-    background-position: -33% 0;
+    background-image: url("./0-sprite.png");
+    background-position: left 50% top 0%;
+    width: 17.7rem;
+    height: 22rem;
+    display: block;
 }
 
 .i-js {
-    background-position: -66% 0;
+    background-image: url("./0-sprite.png");
+    background-position: left 100% top 0%;
+    width: 17.7rem;
+    height: 22rem;
+    display: block;
 }
