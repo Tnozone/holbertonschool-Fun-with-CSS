@@ -1,0 +1,38 @@
+.menu-open-button, .menu-item {
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    color: white;
+}
+
+.menu-open-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-line {
+    background-color: white;
+    height: 5px;
+    width: 20px;
+    margin: 5px 0;
+}
+
+.menu-item:hover {
+    background-color: white;
+    color: red;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    display: none;
+}
+
+input:checked ~ a {
+    display: block;
+}
