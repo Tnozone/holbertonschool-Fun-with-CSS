@@ -1,22 +1,54 @@
 .menu-open-button, .menu-item {
     border: none;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 100px;
+    width: 100px;
     background-color: red;
+    border: 2px solid red;
     color: white;
 }
 
 .menu-open-button {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-open-button:hover {
+    scale: 1.1;
 }
 
 .menu-line {
     background-color: white;
     height: 5px;
-    width: 20px;
+    width: 40px;
     margin: 5px 0;
+}
+
+input:checked .menu-line {
+    rotate: 25%;
+}
+
+input:checked ~ .menu-open-button .menu-line-1 {
+    rotate: 45deg;
+    transition: .2s ease-in-out;
+    transform-origin: left center;
+    width: 41px;
+    margin-left: 10px;
+}
+
+input:checked ~ .menu-open-button .menu-line-3 {
+    rotate: -45deg;
+    transition: .2s ease-in-out;
+    transform-origin: left center;
+    width: 41px;
+    margin-left: 10px;
+}
+
+input:checked ~ .menu-open-button .menu-line-2 {
+    opacity: 0;
+    transition: .2s ease-in-out;
 }
 
 .menu-item:hover {
@@ -30,7 +62,14 @@
 }
 
 a {
+    margin-top: 10px;
     display: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+i {
+    margin-top: 30px;
 }
 
 input:checked ~ a {
